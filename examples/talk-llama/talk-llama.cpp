@@ -742,7 +742,7 @@ int main(int argc, char ** argv) {
 
                             printf("%s", llama_token_to_piece(ctx_llama, id).c_str());
                             fflush(stdout);
-                        }
+                        } else done = true;
                     }
 
                     {
